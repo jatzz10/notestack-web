@@ -1,4 +1,6 @@
-import { Twitter, Mail, Shield, Layers } from "lucide-react";
+import { Twitter, Mail, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
+import notestackIcon from "@/assets/notestack-icon.png";
 
 const Footer = () => {
   return (
@@ -7,11 +9,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo & Copyright */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
-              <Layers className="w-4 h-4 text-primary-foreground" />
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden">
+              <img src={notestackIcon} alt="NoteStack" className="w-full h-full object-contain" />
             </div>
             <span className="text-foreground font-semibold">NoteStack</span>
-            <span className="text-muted-foreground text-sm">© 2024</span>
+            <span className="text-muted-foreground text-sm">© 2026</span>
           </div>
 
           {/* Links */}
@@ -23,13 +25,13 @@ const Footer = () => {
               <Mail className="w-4 h-4" />
               Support
             </a>
-            <a 
-              href="#" 
+            <Link 
+              to="/privacy" 
               className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
             >
               <Shield className="w-4 h-4" />
               Privacy Policy
-            </a>
+            </Link>
             <a 
               href="#" 
               className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"

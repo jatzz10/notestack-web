@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Chrome, Layers } from "lucide-react";
+import { Chrome } from "lucide-react";
+import notestackIcon from "@/assets/notestack-icon.png";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -21,8 +22,8 @@ const Navbar = () => {
         <div className="glass-card rounded-full px-6 py-3 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center">
-              <Layers className="w-5 h-5 text-primary-foreground" />
+            <div className="w-9 h-9 rounded-lg flex items-center justify-center overflow-hidden">
+              <img src={notestackIcon} alt="NoteStack" className="w-full h-full object-contain" />
             </div>
             <span className="text-foreground font-semibold text-lg">NoteStack</span>
           </div>
