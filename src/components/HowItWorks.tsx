@@ -30,7 +30,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-24 px-4 bg-card/30 relative overflow-hidden">
+    <section id="how-it-works" className="py-24 px-4 bg-card/30 relative overflow-hidden scroll-mt-24">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 right-20 w-72 h-72 border border-primary rounded-full" />
