@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Chrome } from "lucide-react";
+import { Link } from "react-router-dom";
 import notestackIcon from "@/assets/notestack-icon.png";
 
 const navLinks = [
@@ -21,12 +22,12 @@ const Navbar = () => {
       <div className="container max-w-6xl mx-auto">
         <div className="glass-card rounded-full px-6 py-3 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="w-9 h-9 rounded-lg flex items-center justify-center overflow-hidden">
               <img src={notestackIcon} alt="NoteStack" className="w-full h-full object-contain" />
             </div>
             <span className="text-foreground font-semibold text-lg">NoteStack</span>
-          </div>
+          </Link>
 
           {/* Nav Links */}
           <div className="hidden md:flex items-center gap-6">
