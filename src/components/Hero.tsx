@@ -30,9 +30,20 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex items-center justify-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <Button variant="hero" size="xl" className="group">
-              <Chrome className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-              Install NoteStack for Free
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="group"
+              asChild
+            >
+              <a 
+                href="https://forms.gle/EMjiZoA5UH7HSuob9" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Chrome className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                Get Free Access
+              </a>
             </Button>
           </div>
         </div>

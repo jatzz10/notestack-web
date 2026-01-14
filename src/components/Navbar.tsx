@@ -43,12 +43,24 @@ const Navbar = () => {
           </div>
 
           {/* CTA */}
-          <Button variant="hero" size="sm" className="hidden sm:flex">
-            <Chrome className="w-4 h-4" />
-            Install Free
+          <Button variant="hero" size="sm" className="hidden sm:flex" asChild>
+            <a 
+              href="https://forms.gle/EMjiZoA5UH7HSuob9" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Chrome className="w-4 h-4" />
+              Get Free Access
+            </a>
           </Button>
-          <Button variant="hero" size="icon" className="sm:hidden w-9 h-9">
-            <Chrome className="w-4 h-4" />
+          <Button variant="hero" size="icon" className="sm:hidden w-9 h-9" asChild>
+            <a 
+              href="https://forms.gle/EMjiZoA5UH7HSuob9" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Chrome className="w-4 h-4" />
+            </a>
           </Button>
         </div>
       </div>

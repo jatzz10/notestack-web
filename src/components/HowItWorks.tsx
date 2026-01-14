@@ -86,7 +86,7 @@ const HowItWorks = () => {
         <div className="text-center">
           <Button variant="hero" size="xl">
             <Chrome className="w-5 h-5" />
-            Add to Chrome — It's Free
+            Get Free Access
           </Button>
         </div>
       </div>
