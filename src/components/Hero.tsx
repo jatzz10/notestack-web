@@ -1,8 +1,35 @@
 import { Button } from "@/components/ui/button";
 import { Chrome, Sparkles } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup.png";
+import { useEffect, useRef } from "react";
 
 const Hero = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Use Intersection Observer to only load video when it's about to be visible
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Only start loading when video is visible
+            video.load();
+            observer.disconnect();
+          }
+        });
+      },
+      { rootMargin: "50px" } // Start loading 50px before video enters viewport
+    );
+
+    observer.observe(video);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 pt-32 pb-20">
       {/* Background glow effect */}
@@ -70,11 +97,18 @@ const Hero = () => {
                 </div>
               </div>
               
-              {/* Image */}
-              <img 
-                src={heroMockup} 
-                alt="NoteStack Chrome Extension showing saved notes, drafts, and scheduling features"
+              {/* Video */}
+              <video
+                ref={videoRef}
+                src="/introducing_notestack.mp4"
+                poster={heroMockup}
                 className="w-full h-auto"
+                playsInline
+                controls
+                loop
+                autoPlay={true}
+                preload="none" // Don't preload until visible
+                aria-label="NoteStack Chrome Extension demonstration video showing saved notes, drafts, and scheduling features"
               />
             </div>
           </div>
