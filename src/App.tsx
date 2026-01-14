@@ -9,12 +9,21 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Get base path for GitHub Pages
+const getBasePath = () => {
+  // Check if we're on GitHub Pages (production)
+  if (import.meta.env.PROD && window.location.hostname === 'jatzz10.github.io') {
+    return '/notestack-web';
+  }
+  return '';
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={getBasePath()}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/privacy" element={<Privacy />} />
