@@ -34,7 +34,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="py-24 px-4 relative">
+    <section id="faq" className="py-24 px-4 relative scroll-mt-24">
       <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
       
       <div className="container max-w-3xl mx-auto relative z-10">

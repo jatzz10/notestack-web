@@ -1,7 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Chrome, Layers } from "lucide-react";
 
+const navLinks = [
+  { label: "Features", href: "#features" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "FAQ", href: "#faq" },
+];
+
 const Navbar = () => {
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-4">
       <div className="container max-w-6xl mx-auto">
@@ -12,6 +25,19 @@ const Navbar = () => {
               <Layers className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="text-foreground font-semibold text-lg">NoteStack</span>
+          </div>
+
+          {/* Nav Links */}
+          <div className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <button
+                key={link.href}
+                onClick={() => scrollToSection(link.href)}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </button>
+            ))}
           </div>
 
           {/* CTA */}
