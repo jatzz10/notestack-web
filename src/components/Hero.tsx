@@ -29,13 +29,10 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+          <div className="flex items-center justify-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <Button variant="hero" size="xl" className="group">
               <Chrome className="w-5 h-5 group-hover:rotate-12 transition-transform" />
               Install NoteStack for Free
-            </Button>
-            <Button variant="heroOutline" size="lg">
-              See How It Works
             </Button>
           </div>
         </div>

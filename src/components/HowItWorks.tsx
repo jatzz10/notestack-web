@@ -12,13 +12,13 @@ const steps = [
     number: "02",
     icon: LogIn,
     title: "Authenticate",
-    description: "Log in with your Substack account automatically. No extra setup needed.",
+    description: "Log in to your Substack account. No extra setup needed.",
   },
   {
     number: "03",
     icon: MousePointerClick,
     title: "Capture",
-    description: "Click the extension icon to save notes or check your drafts anytime.",
+    description: "Click the extension icon to open side-panel and save notes or check your drafts anytime.",
   },
   {
     number: "04",

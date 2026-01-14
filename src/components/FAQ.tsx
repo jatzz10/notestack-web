@@ -8,11 +8,7 @@ import {
 const faqs = [
   {
     question: "Is NoteStack free?",
-    answer: "Yes! NoteStack offers a generous free tier that includes saving unlimited notes, creating drafts, and scheduling posts. Premium features may be added in the future, but the core functionality will always be free.",
-  },
-  {
-    question: "Does it work on all Substack publications?",
-    answer: "Absolutely. NoteStack works across the entire Substack ecosystem. Whether you're reading Notes, browsing publications, or managing your own content, NoteStack is there to help.",
+    answer: "Yes! NoteStack is completely free for now. It includes saving unlimited notes, creating drafts, and scheduling posts.",
   },
   {
     question: "Is my data safe?",
@@ -24,11 +20,11 @@ const faqs = [
   },
   {
     question: "How does scheduling work?",
-    answer: "Simply write your note in the Drafts tab, click the schedule button, pick your preferred date and time, and NoteStack will automatically post it for you. It works even when your browser is closed.",
+    answer: "Simply write your note in the Drafts tab, click the schedule button, pick your preferred date and time, and NoteStack will automatically post it for you.",
   },
   {
     question: "Which browsers are supported?",
-    answer: "NoteStack is currently available for Google Chrome and other Chromium-based browsers like Brave, Edge, and Arc. Firefox support is planned for the future.",
+    answer: "NoteStack is currently available for Google Chrome and other Chromium-based browsers like Brave, Edge, Arc, and more.",
   },
 ];
 
