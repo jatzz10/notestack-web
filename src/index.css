@@ -75,11 +75,13 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
 
   /* Prevent shimmer: ensure animate-fade-up elements start hidden before animation CSS loads */
