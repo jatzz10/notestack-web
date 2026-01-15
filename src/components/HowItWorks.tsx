@@ -84,9 +84,11 @@ const HowItWorks = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="hero" size="xl">
-            <Chrome className="w-5 h-5" />
-            Get Free Access
+          <Button variant="hero" size="xl" asChild>
+            <a href="https://forms.gle/EMjiZoA5UH7HSuob9" target="_blank" rel="noopener noreferrer">
+              <Chrome className="w-5 h-5" />
+              Get Free Access
+            </a>
           </Button>
         </div>
       </div>

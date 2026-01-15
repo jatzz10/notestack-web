@@ -30,9 +30,9 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section id="faq" className="py-24 px-4 relative scroll-mt-24">
+    <section id="faq" className="py-24 px-4 relative scroll-mt-24 overflow-hidden">
       <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
-      
+
       <div className="container max-w-3xl mx-auto relative z-10">
         {/* Section header */}
         <div className="text-center mb-12">
@@ -47,8 +47,8 @@ const FAQ = () => {
         {/* FAQ Accordion */}
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem 
-              key={index} 
+            <AccordionItem
+              key={index}
               value={`item-${index}`}
               className="bg-card border border-border rounded-xl px-6 data-[state=open]:border-primary/50 transition-colors"
             >

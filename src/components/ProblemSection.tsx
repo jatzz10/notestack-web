@@ -23,10 +23,10 @@ const problems = [
 
 const ProblemSection = () => {
   return (
-    <section id="features" className="py-24 px-4 relative scroll-mt-24">
+    <section id="features" className="py-24 px-4 relative scroll-mt-24 overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
-      
+
       <div className="container max-w-6xl mx-auto relative z-10">
         {/* Section header */}
         <div className="text-center mb-16">
@@ -41,7 +41,7 @@ const ProblemSection = () => {
         {/* Problem cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {problems.map((item, index) => (
-            <div 
+            <div
               key={index}
               className="group relative bg-card rounded-2xl p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:-translate-y-1"
             >
