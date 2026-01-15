@@ -34,7 +34,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 pt-32 pb-20">
       {/* Background glow effect */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
-      
+
       <div className="container max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-12">
           {/* Badge */}
@@ -57,15 +57,15 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex items-center justify-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <Button 
-              variant="hero" 
-              size="xl" 
+            <Button
+              variant="hero"
+              size="xl"
               className="group"
               asChild
             >
-              <a 
-                href="https://forms.gle/EMjiZoA5UH7HSuob9" 
-                target="_blank" 
+              <a
+                href="https://forms.gle/EMjiZoA5UH7HSuob9"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <Chrome className="w-5 h-5 group-hover:rotate-12 transition-transform" />
@@ -80,7 +80,7 @@ const Hero = () => {
           <div className="relative mx-auto max-w-4xl">
             {/* Glow behind image */}
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-3xl transform scale-95" />
-            
+
             {/* Browser frame */}
             <div className="relative glass-card rounded-2xl overflow-hidden border border-border/50">
               {/* Browser header */}
@@ -96,11 +96,11 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Video */}
               <video
                 ref={videoRef}
-                src="/introducing_notestack.mp4"
+                src={`${import.meta.env.BASE_URL}introducing_notestack.mp4`}
                 poster={heroMockup}
                 className="w-full h-auto"
                 playsInline
