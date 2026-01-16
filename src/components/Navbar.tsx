@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Chrome } from "lucide-react";
 import { Link } from "react-router-dom";
-import notestackIcon from "@/assets/notestack-icon.png";
+import notestackIcon from "@/assets/notestack-icon.svg";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -44,9 +44,9 @@ const Navbar = () => {
 
           {/* CTA */}
           <Button variant="hero" size="sm" className="hidden sm:flex" asChild>
-            <a 
-              href="https://forms.gle/EMjiZoA5UH7HSuob9" 
-              target="_blank" 
+            <a
+              href="https://forms.gle/EMjiZoA5UH7HSuob9"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <Chrome className="w-4 h-4" />
@@ -54,9 +54,9 @@ const Navbar = () => {
             </a>
           </Button>
           <Button variant="hero" size="icon" className="sm:hidden w-9 h-9" asChild>
-            <a 
-              href="https://forms.gle/EMjiZoA5UH7HSuob9" 
-              target="_blank" 
+            <a
+              href="https://forms.gle/EMjiZoA5UH7HSuob9"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <Chrome className="w-4 h-4" />

@@ -1,6 +1,6 @@
 import { Mail, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
-import notestackIcon from "@/assets/notestack-icon.png";
+import notestackIcon from "@/assets/notestack-icon.svg";
 
 const Footer = () => {
   return (
@@ -18,15 +18,15 @@ const Footer = () => {
 
           {/* Links */}
           <div className="flex items-center gap-6 text-sm">
-            <a 
-              href="mailto:notestack.help@gmail.com" 
+            <a
+              href="mailto:notestack.help@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
               Support
             </a>
-            <Link 
-              to="/privacy" 
+            <Link
+              to="/privacy"
               className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
             >
               <Shield className="w-4 h-4" />
