@@ -50,7 +50,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
             >
               <Chrome className="w-4 h-4" />
-              Get Free Access
+              Get Early Access
             </a>
           </Button>
           <Button variant="hero" size="icon" className="sm:hidden w-9 h-9" asChild>

@@ -87,7 +87,7 @@ const HowItWorks = () => {
           <Button variant="hero" size="xl" asChild>
             <a href="https://forms.gle/EMjiZoA5UH7HSuob9" target="_blank" rel="noopener noreferrer">
               <Chrome className="w-5 h-5" />
-              Get Free Access
+              Get Early Access
             </a>
           </Button>
         </div>

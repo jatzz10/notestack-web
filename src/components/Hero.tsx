@@ -69,7 +69,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 <Chrome className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-                Get Free Access
+                Get Early Access
               </a>
             </Button>
           </div>
