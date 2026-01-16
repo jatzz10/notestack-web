@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Chrome, Sparkles } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup.png";
+
 import { useEffect, useRef } from "react";
 
 const Hero = () => {
@@ -81,28 +81,12 @@ const Hero = () => {
             {/* Glow behind image */}
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-3xl transform scale-95" />
 
-            {/* Browser frame */}
+            {/* Video with rounded corners */}
             <div className="relative glass-card rounded-2xl overflow-hidden border border-border/50">
-              {/* Browser header */}
-              <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-card/50">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-destructive/80" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                </div>
-                <div className="flex-1 mx-4">
-                  <div className="bg-muted/50 rounded-md px-3 py-1.5 text-xs text-muted-foreground max-w-md mx-auto">
-                    substack.com/notes
-                  </div>
-                </div>
-              </div>
-
-              {/* Video */}
               <video
                 ref={videoRef}
                 src={`${import.meta.env.BASE_URL}introducing_notestack.mp4`}
-                poster={heroMockup}
-                className="w-full h-auto"
+                className="w-full h-auto rounded-2xl"
                 playsInline
                 controls
                 loop
