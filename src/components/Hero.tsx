@@ -1,35 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Chrome, Sparkles } from "lucide-react";
 
-import { useEffect, useRef } from "react";
-
 const Hero = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    // Use Intersection Observer to only load video when it's about to be visible
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            // Only start loading when video is visible
-            video.load();
-            observer.disconnect();
-          }
-        });
-      },
-      { rootMargin: "50px" } // Start loading 50px before video enters viewport
-    );
-
-    observer.observe(video);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 pt-32 pb-20">
       {/* Background glow effect */}
@@ -81,19 +53,17 @@ const Hero = () => {
             {/* Glow behind image */}
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-3xl transform scale-95" />
 
-            {/* Video with rounded corners */}
+            {/* YouTube Video Embed */}
             <div className="relative glass-card rounded-2xl overflow-hidden border border-border/50">
-              <video
-                ref={videoRef}
-                src={`${import.meta.env.BASE_URL}introducing_notestack.mp4`}
-                className="w-full h-auto rounded-2xl"
-                playsInline
-                controls
-                loop
-                autoPlay={true}
-                preload="none" // Don't preload until visible
-                aria-label="NoteStack Chrome Extension demonstration video showing saved notes, drafts, and scheduling features"
-              />
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-2xl"
+                  src="https://www.youtube.com/embed/W-Y0iGRKmZ4?rel=0"
+                  title="NoteStack Chrome Extension Demo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </div>
