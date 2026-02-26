@@ -16,7 +16,7 @@ const problems = [
   {
     icon: Clock,
     problem: "No Scheduling",
-    painPoint: "There is no native way to schedule notes in Substack, no way to plan your notes and growth in advance.",
+    painPoint: "There is no native way to schedule notes in Substack, making it impossible to plan your content and growth in advance.",
     solution: "Schedule your notes to auto-publish at your preferred time.",
   },
 ];

@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "Is NoteStack free?",
-    answer: "Yes! NoteStack is completely free for now. It includes saving unlimited notes, creating drafts, and scheduling posts.",
+    answer: "Yes! NoteStack is completely free during this early access phase. We will be introducing a simple, affordable one-time payment option soon for the full version.",
   },
   {
     question: "Is my data safe?",
