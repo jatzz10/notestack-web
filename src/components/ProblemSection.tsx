@@ -16,8 +16,8 @@ const problems = [
   {
     icon: Clock,
     problem: "No Scheduling",
-    painPoint: "You have to be online to post. You can't plan your growth strategy or post during peak hours if you're asleep.",
-    solution: "Schedule your notes to auto-publish at the perfect time, day or night.",
+    painPoint: "There is no native way to schedule notes in Substack, no way to plan your notes and growth in advance.",
+    solution: "Schedule your notes to auto-publish at your preferred time.",
   },
 ];
 

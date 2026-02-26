@@ -12,19 +12,19 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-8 animate-fade-up" style={{ animationDelay: '0.1s' }}>
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Built for Substack Writers</span>
+            <span className="text-sm text-muted-foreground">Built for Substack Creators</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-fade-up text-balance" style={{ animationDelay: '0.2s' }}>
             Master Your Substack
             <br />
-            <span className="gradient-text">Notes Workflow.</span>
+            <span className="gradient-text">Notes Workflow</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up text-balance" style={{ animationDelay: '0.3s' }}>
-            Save inspiration instantly, draft without distractions, and schedule notes to grow your audience while you sleep.
+            Save inspiration instantly, draft without distractions, and schedule notes to grow your audience effortlessly.
           </p>
 
           {/* CTA Buttons */}

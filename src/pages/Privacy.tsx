@@ -20,7 +20,7 @@ const Privacy = () => {
             <h1>NoteStack Privacy Policy</h1>
 
             <p className="text-muted-foreground mb-10">
-              <strong className="text-foreground">Last Updated:</strong> January 14, 2026
+              <strong className="text-foreground">Last Updated:</strong> February 26, 2026
             </p>
 
             <section>
@@ -30,10 +30,10 @@ const Privacy = () => {
 
               <ol>
                 <li>
-                  <strong className="text-foreground">Saved Notes & Drafts:</strong> Generally stored locally on your device using Chrome's storage API. Scheduling Exception: When you schedule a post, the draft content and a secure authentication token are transmitted to our secure automated server (Cloudflare Worker). This data is used solely to execute the scheduled post at your chosen time and is deleted from the server immediately after processing.
+                  <strong className="text-foreground">Saved Notes & Drafts:</strong> Stored locally on your device using Chrome's storage API. Post scheduling is handled entirely on your local machine. No draft content is ever transmitted to or stored on external servers.
                 </li>
                 <li>
-                  <strong className="text-foreground">License Key:</strong> If you purchase a license, your key is verified via our secure proxy server which communicates with Gumroad's API. No other personal information is stored by our proxy.
+                  <strong className="text-foreground">License Key:</strong> If you purchase a license, your key is verified securely via DodoPayments. We do not use any intermediary proxy servers, and no personal payment information is stored by NoteStack.
                 </li>
                 <li>
                   <strong className="text-foreground">Anonymous Usage Metrics:</strong> We collect aggregated, anonymized usage statistics

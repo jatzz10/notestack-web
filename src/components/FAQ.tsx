@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "Can I edit a scheduled note?",
-    answer: "Yes! You can edit or cancel any scheduled note from the 'Scheduled' tab before it goes live. Full flexibility to change your mind at any time.",
+    answer: "Yes! You can edit by first cancelling any scheduled note from the 'Scheduled' tab before it goes live. Full flexibility to change your mind at any time.",
   },
   {
     question: "How does scheduling work?",
